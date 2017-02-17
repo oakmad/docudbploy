@@ -19,7 +19,7 @@ npm install -g docudbploy
 
 ## Project setup
 
-In yur project directory run:
+In your project directory run:
 
 ```
 docudbploy init
@@ -105,4 +105,4 @@ Contributions are welcome, send me a pull request or issue
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
