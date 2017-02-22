@@ -1,5 +1,5 @@
 {
-  "name": "docudbploy",
+  "name": "azdocdb",
   "version": "0.1.0",
   "description": "DocumentDb helper for stored procedures and user defined functions. Handles monitoring and deployment.",
   "scripts": {
@@ -10,7 +10,15 @@
     "url": "git+https://github.com/oakmad/docudbploy.git"
   },
   "keywords": [
-    "DocumentDb"
+    "documentdb",
+    "deploy",
+    "publish",
+    "azure",
+    "document",
+    "database",
+    "nosql",
+    "cloud",
+    "serverless"
   ],
   "author": "Adam Oakman",
   "license": "MIT",
@@ -20,18 +28,15 @@
   "homepage": "https://github.com/oakmad/docudbploy#readme",
   "preferGlobal": true,
   "bin": {
-    "docudbploy": "main.js"
+    "azdocdb": "main.js"
   },
   "dependencies": {
     "camelcase": "^4.0.0",
-    "cli-progress": "^1.3.0",
     "commander": "^2.9.0",
-    "documentdb": "^1.10.2",
     "documentdb-q-promises": "^1.6.0",
     "elegant-status": "^1.1.0",
     "jsonfile": "^2.4.0",
     "lodash": "^4.17.4",
-    "progress": "^1.1.8",
     "q": "^1.4.1",
     "walk-sync": "^0.3.1"
   },

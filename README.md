@@ -1,4 +1,4 @@
-# DocuDbPloy
+# AzDocDb
 
 A helper application for deploying DocumentDb databases, collections and server scripts (stored procedures, triggers and user defined functions).
 Designed to handle both the creation and updating on deploy. A work in progress; issues are welcome.
@@ -14,7 +14,7 @@ Tested with Node 6.9.2
 ### Installing
 
 ```
-npm install -g docudbploy
+npm install -g azdocdb
 ```
 
 ## Project setup
@@ -22,15 +22,15 @@ npm install -g docudbploy
 In your project directory run:
 
 ```
-docudbploy init
+azdocdb init
 ```
 
-This will create dpcudbploy.json file that controls all configuration such as documentdb connection details.
+This will create azdocdb.json file that controls all configuration such as documentdb connection details.
 
 ```
 {
   "globs": ["**/*.js"], //Global walk-sync minimatch.Minimatch glob of files and directories to include
-  "ignore": ["docudbploy.json"], //ignore these globs
+  "ignore": ["azdocdb.json"], //ignore these globs
   "env": [
     {
       "id": "dev", //A unique
@@ -54,9 +54,9 @@ This will create dpcudbploy.json file that controls all configuration such as do
 Use the create command to set server side scripts that contain all of your business logic.
 
 ```
-docudbploy create <type> <filename>
+azdocdb create <type> <filename>
 
-e.g. docudbploy create sp my-first-sp.js
+e.g. azdocdb create sp my-first-sp.js
 ```
 
 This will create a template file in the current directory, using the filename as a basis for the server scripts id and function name.
@@ -85,7 +85,7 @@ with deploy: true will be processed. Processing validates the database and each 
 Processes each file included in the walk and upserts the server side script.
 
 ```
-docudbploy deploy [env]
+azdocdb deploy [env]
 ```
 
 ## Built With
